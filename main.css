@@ -1,0 +1,338 @@
+ <style type="text/css" >
+ 
+        @font-face {
+            font-family: "BEATANDBEER";
+                src: url('BEATANDBEER.ttf');
+        }
+
+        body{
+            overflow-y: hidden !important;
+            /*overflow-x: hidden !important;*/
+            padding:0px;
+        }
+        
+        a{
+            font-family: BEATANDBEER;
+            text-decoration: none;
+            color: black;
+            text-align: right;
+        }
+    
+        a:hover{
+            color :orangered;
+            cursor: pointer;
+        }
+
+/************** video *********************/
+        
+        video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(IMG_6060.JPG) no-repeat;
+    background-size:cover;
+}
+
+/************** menu déroulant *********************/
+    
+        #menu{
+            z-index: 1000;
+            position: fixed;
+            left: 20px;
+            top:0px;
+            margin-top: 80px;
+            padding-left: 0px;
+            font-family:Karla;
+            font-size:40px;
+            line-height: 40px;
+            text-align: left;
+            display:none;
+        }
+        
+        #menu_accueil{
+            z-index: 1000;
+            position: fixed;
+            left: 20px;
+            top:0px;
+            margin-top: 20px;
+            padding-left: 0px;
+            font-family:Karla;
+            font-size: 80px;
+            line-height: 40px;
+            text-align: left;
+        }
+
+/************** tracklist *********************/
+        
+         #play_accueil{
+            z-index:900;
+            position:fixed;
+            left:20px;
+            bottom:20px;
+            font-size: 60px;
+        }
+
+         #player{
+            z-index:900;
+            position:fixed;
+            left:0px;
+            bottom:0px;
+            width:100%;
+            display:none;
+            background:#fff;
+            padding-left: 40px;
+        }
+        
+        #tracklist{
+            display:inline-block;
+        }
+
+        .tracks{
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        audio{
+            display: inline-block;
+        }
+
+        .active a{
+            color:blue;
+            text-decoration:none;
+            display: inline-block;
+        }
+
+/************** affiche édition en cours *********************/
+        
+        .random{
+            z-index: 1000;
+            position:fixed;
+            width:20%;
+            margin-top:50px;
+            right:5%;
+            /*-moz-transform:rotate(15deg);*/
+        }
+
+.random img{
+    width:100%;
+    height:auto;
+}
+
+/************** index *********************/
+        
+        #accueil{
+            width:100vw;
+            top:0px;
+            left:0px;
+            display:block;
+            height:100vh;
+            overflow-y: auto;
+            vertical-align:top;
+            font-family: BEATANDBEER;
+            font-size: 25vh;
+            text-align: center;
+            margin:0px;0px;0px;0px;
+            padding:0px;0px;0px;0px;
+            line-height: 26vh !important;
+            position:fixed;
+        }
+
+/************** fiche artiste *********************/
+
+        #fiche_artiste{
+            width:80vw;
+            position:absolute;
+            top:0px;
+            left:15%;
+            display:block;
+            height:100vh;
+            overflow-y: auto;
+            vertical-align:top;
+            font-family: Karla;
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 30px;
+            line-height: 30px !important;
+        }
+
+
+        .titre{
+            z-index: 1000;
+            position: fixed;
+            margin-top: 20vh;
+            right: 85%;
+            font-family:BEATANDBEER;
+            font-size:25vh;
+            line-height: 40px;
+            -moz-transform:rotate(-90deg);
+        }
+        
+        #fermer_artiste{
+            z-index: 1000;
+            position: fixed;
+            left: 20px;
+            top:0px;
+            margin-top: 20px;
+            padding-left: 0px;
+            font-family:Karla;
+            font-size: 80px;
+            line-height: 40px;
+            text-align: left;
+        }
+
+        
+        .ecoute{
+            width:auto;
+            font-family: BEATANDBEER;
+            font-size: 50px;
+            text-align: center;
+            display:block;
+            background: #fff;
+            padding:10px;
+        }
+
+        .data_artiste{
+            width:35%;
+            text-align: left;
+            margin-left:30px;
+            float: left;
+        }
+        
+        .texte_artistes{
+            width:55%;
+            display:inline-block;
+            vertical-align:top;
+            text-align:left;
+            float: left;
+            }
+        
+        .image_artiste{
+            width:100%;
+            height:100%;
+            display:block;
+        }
+
+        .liens_artiste{
+            width:100%;
+            padding-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+/************** fiche infos *********************/
+
+        #grandtexte{            
+            text-align: left;
+            width:80%;
+            top:0px;
+            left:20%;
+            display:block;
+            height:100vh;
+            font-family: Karla;
+            font-size: 25px;
+            margin:0px;0px;0px;0px;
+            padding:0px;0px;0px;0px;
+            position:fixed;
+            overflow-y: auto;
+        }
+
+        #menu_infos{
+            z-index: 1000;
+            position: fixed;
+            left: 20px;
+            top:0px;
+            margin-top: 80px;
+            padding-left: 0px;
+            font-family:Karla;
+            font-size:40px;
+            line-height: 40px;
+            text-align: left;
+        }
+
+/***********************************/
+            
+        h1{
+            position: relative;
+            font-family: BEATANDBEER;
+            font-size: 80px;
+            text-align: left;
+            padding-top: 20px;
+            padding-left:  0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color:black;
+            font-weight: normal;
+        }
+
+        h2{
+            position:relative;
+            font-family: Karla;
+            font-weight: 700;
+            font-size: 25px;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        h3{
+            position:relative;
+            font-family: Karla;
+            font-size: 20px;
+            text-align: center;
+            padding: 0px;20px;0px;20px;
+            font-weight: normal;
+        }
+        
+        p{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        li{
+            
+            list-style-type: none;
+        }
+
+/************** ??? *********************/
+        
+        #lien_programme{
+        }
+        
+        #lien_infospratiques{
+        }
+        
+        #lien_leprojet{
+        }
+        
+        #lien_partenaires{
+        }
+        
+        #lien_contact{
+        }
+
+        #lien_programme_infos{
+        }
+        
+        #lien_infospratiques_infos{
+        }
+        
+        #lien_leprojet_infos{
+        }
+        
+        #lien_partenaires_infos{
+        }
+        
+        #lien_contact_infos{
+        }
+        
+        
+    </style>

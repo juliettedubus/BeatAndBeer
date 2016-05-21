@@ -1,0 +1,229 @@
+<! DOCTYPE html>
+<html>
+    
+    <head>
+        
+            <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FESTIVAL BEAT AND BEER</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla:700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
+    </script>
+    
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    
+	
+    
+    </head>
+    
+<body>
+    
+    <!--player -->
+    
+    <div id="player">
+        
+        <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+            <source type="audio/mp3" src="mp3_artistes/AchillesFamilyAchillesFamily.mp3">
+            Sorry, your browser does not support HTML5 audio.
+        </audio>
+        
+        <div id="tracklist">
+            <div class="active"><a href="mp3_artistes/AchillesFamilyAchillesFamily.mp3">► Achille's Family</a></div>
+            <div class="tracks"><a href="mp3_artistes/LaMoucheLesScouts.mp3">► Les Scouts</a></div>
+            <div class="tracks"><a href="mp3_artistes/MiamJdis%C3%A7a.mp3">► J'dis ça j'dis rien</a></div>
+            <div class="tracks"><a href="mp3_artistes/NamPaEyes.mp3">► Eyes</a></div>
+            <div class="tracks"><a href="mp3_artistes/BlackShipCoOutsideofHistory.mp3">► Outside of history</a></div>
+            <div class="tracks"><a href="mp3_artistes/ISHKEROShinpai%20Shinaide.mp3">► Shinpai Shinaide</a></div>
+        </div>
+        
+    </div>
+    
+    <a id="play_accueil" onclick="info_artiste('#player')" href="javascript://">►</a><br>
+  
+    
+    <!--vidéo en boucle-->
+    
+    <video autoplay loop poster="images/IMG_6060.JPG" id="bgvid">
+                    <source src="videos/MVI_6072j.webm" volume="0" type="video/webm">
+                    <source src="videos/MVI_6072j.mp4" volume="0" type="video/mp4">
+                </video>
+    
+    <script>      
+                    var vid = document.getElementById("bgvid");
+                    vid.volume = 0;
+    </script>
+        
+    <!-- affiche -->    
+    
+    <img class="random" src="images/Affiche.jpg">
+            
+    <!-- MENU -->
+                
+    <ul id="menu_infos">
+        
+        <li><a id="lien_programme_infos" href="javascript://">programme</a></li>
+        <li><a id="lien_infospratiques_infos" href="javascript://">infos pratiques</a></li>
+        <li><a id="lien_leprojet_infos" href="javascript://">le projet</a></li>
+        <li><a id="lien_partenaires_infos" href="javascript://">partenaires</a></li>
+        <li><a id="lien_contact_infos" href="javascript://">contact</a></li>
+        <li><a href="https://www.facebook.com/beatandbeer/" target="_blank">facebook</a></li>
+        
+     </ul>
+    
+    <a id="fermer_artiste" href="index.html">←</a><br> 
+
+<!-- PARTIE INFOS -->
+                    <div id="grandtexte">
+                    
+                    <div id="programme">
+                        <h1>PROGRAMME : </h1>
+                        <p>Texte sur les trois temps de la journée <br> Musique <br> Restauration <br> Bar <br> Exposition <br></p>
+                        <h2>◇◇☼ 12h - 22h ☼◇◇</h2>
+                        <p>☞ Concerts en extérieur<br>
+                        ☞ Restauration<br>
+                        ☞ Bar<br>
+                        ☞ Activités en extérieur<br>
+                        ☞ Exposition de street art
+                        </p>
+                    </div>
+            
+                    <div id="infospratiques">
+                        <h1>INFOS PRATIQUES : </h1>
+                        <p>Billeterie <br> Accès <br> A manger et à boire sur place <br> Bénévoles
+                        </p>
+                    </div>
+                
+                    <div id="leprojet">
+                        <h1>LE PROJET : </h1>
+                        <p>Le festival Beat and Beer est un rendez-vous estival musical et artistique. Il aura lieu à Malakoff (92), le 2 Juillet 2016. L'événement se déroulera le temps d'une journée durant laquelle s’enchaîneront plusieurs concerts de jeunes groupes émergents. En plus d'une expérience sonore, Beat and Beer est aussi une expérience esthétique, puisqu'il s'organise dans un lieu insolite, mis en valeur par une scénographie originale. Enfin, nous souhaitons également que le festival, organisé sur une journée, soit une expérience sociale : le public sera amené à
+                        </p>
+                    </div>
+              
+                    <div id="partenaires">
+                        <h1>PARTENAIRES : </h1>
+                        <p>La Réserve <br>
+                        Mairie de Malakoff <br>
+                        FSDIE <br>
+                        Patchamama
+                        </p>
+                    </div>                       
+                        
+                    <div id="contact">
+                        <h1>CONTACT : </h1>
+                        <p>La Réserve <br>
+                        Mairie de Malakoff <br>
+                        FSDIE <br>
+                        Patchamama<br>
+                        La Réserve <br>
+                        Mairie de Malakoff <br>
+                        FSDIE <br>
+                        Patchamama<br>
+                        La Réserve <br>
+                        Mairie de Malakoff <br>
+                        FSDIE <br>
+                        Patchamama<br>
+                        La Réserve <br>
+                        Mairie de Malakoff <br>
+                        FSDIE <br>
+                        Patchamama<br>
+                        La Réserve <br>
+                        Mairie de Malakoff <br>
+                        FSDIE <br>
+                        Patchamama<br>
+                        La Réserve <br>
+                        Mairie de Malakoff <br>
+                        FSDIE <br>
+                        Patchamama<br>
+                        </p>
+                    </div>
+                                                                       
+                </div>
+    
+        <!-- JAVASCRIPT JAVASCRIPT JAVASCRIPT JAVASCRIPT JAVASCRIPT JAVASCRIPT -->   
+    
+<!-- SCRIPT DES BOUTONS --> 
+    
+    <script type="text/javascript" src="js/jquery.scrollTo-master/jquery.scrollTo.js"></script>
+    
+    <script type="text/javascript">
+
+       
+       $( "#menu_accueil_infos" ).click(function() { $( "#menu" ).slideToggle( 500 ); });
+       
+       $( "#play_accueil" ).click(function() { $( "#player" ).slideToggle( 500 ); });
+            
+  
+       $( "#lien_programme_infos" ).click(function() { 
+	$('#grandtexte').scrollTo('#programme',2000 );
+});
+       
+$( "#lien_infospratiques_infos" ).click(function() { 
+	$('#grandtexte').scrollTo('#infospratiques',2000);
+});
+           
+       $( "#lien_leprojet_infos" ).click(function() { 
+	$('#grandtexte').scrollTo('#leprojet',2000 );
+});
+          
+       $( "#lien_partenaires_infos" ).click(function() { 
+	$('#grandtexte').scrollTo('#partenaires',2000 );
+});
+       
+       $( "#lien_contact_infos" ).click(function() { 
+	$('#grandtexte').scrollTo('#contact',2000 );
+});
+    
+       
+/* tracklist! tracklist! tracklist! tracklist! tracklist! tracklist! */
+       
+       var audio;
+var tracklist;
+var tracks;
+var current;
+
+init();
+function init(){
+    current = 0;
+    audio = $('audio');
+    tracklist = $('#tracklist');
+    tracks = tracklist.find('li a');
+    len = tracks.length - 1;
+    audio[0].volume = .10;
+    audio[0].play();
+    tracklist.find('a').click(function(e){
+        e.preventDefault();
+        link = $(this);
+        current = link.parent().index();
+        run(link, audio[0]);
+    });
+    audio[0].addEventListener('ended',function(e){
+        current++;
+        if(current == len){
+            current = 0;
+            link = tracklist.find('a')[0];
+        }else{
+            link = tracklist.find('a')[current];    
+        }
+        run($(link),audio[0]);
+    });
+}
+function run(link, player){
+        player.src = link.attr('href');
+        par = link.parent();
+        par.addClass('active').siblings().removeClass('active');
+        audio[0].load();
+        audio[0].play();
+}
+
+        
+        
+       /////////////////////////
+
+</script>
+
+</body>
+</html>
