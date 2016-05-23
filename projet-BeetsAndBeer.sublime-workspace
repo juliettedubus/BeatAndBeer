@@ -1,0 +1,406 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"las",
+				"laszloEngine〔variable〕"
+			],
+			[
+				"html",
+				"htmlResult"
+			],
+			[
+				"loa",
+				"loadHTML〔function〕"
+			],
+			[
+				"get",
+				"getElementsByTagName〔function〕"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"galler",
+				"$gallerie〔variable〕"
+			],
+			[
+				"html_entity",
+				"html_entity_decode"
+			],
+			[
+				"a",
+				"ajax	$.ajax()"
+			],
+			[
+				"short",
+				"shortcode_obj"
+			],
+			[
+				"inl",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"git",
+				"Git: Toggle Annotations"
+			],
+			[
+				"termi",
+				"Open in terminal"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/loic/Sites/HEAR-2016-BeatAndBeer",
+		"/Users/loic/Sites/HEAR-2016-BeatAndBeer/images",
+		"/Users/loic/Sites/HEAR-2016-BeatAndBeer/images_artistes",
+		"/Users/loic/Sites/HEAR-2016-BeatAndBeer/js"
+	],
+	"file_history":
+	[
+		"/Users/loic/Documents/COURS/STRASBOURG/2015-2016/A5/Cohen Laure/test/index.js",
+		"/Users/loic/Documents/COURS/STRASBOURG/2015-2016/A5/Cohen Laure/laszlo-engine.js",
+		"/Users/loic/Documents/COURS/STRASBOURG/2015-2016/A5/Cohen Laure/laszloCommand.js",
+		"/Users/loic/Documents/COURS/STRASBOURG/2015-2016/A5/Cohen Laure/param.js",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/composer.json",
+		"/Users/loic/Sites/Site_CDF/_RECHERCHE/composer.json",
+		"/Users/loic/Sites/pdf-generator/index.php",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/inc/tinymce_js/mp_gallery_plugin.js",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/inc/mp.structure.php",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/inc/views/ajax-galleries-image-get-html.php",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/inc/tinymce_js/mp_xref_plugin.js",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/inc/views/meta-edition.php",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/themefiles/carnet-du-frac/galleries.json",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/themefiles/carnet-du-frac/style.css",
+		"/Users/loic/Sites/Site_CDF/wp-includes/js/tinymce/plugins/wpgallery/plugin.js",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/inc/tinymce_js/mp_note_plugin.js",
+		"/Users/loic/Sites/Site_CDF/_RECHERCHE/OLD-stackoverflow : shortcode.txt",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/tinymce-graphical-shortcode/tinymce-plugin/icitspots/mp_xref_plugin.js",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/tinymce-graphical-shortcode/tinymce-plugin/icitspots/mp_note_plugin.js",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/js/mp-admin.js",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/css/mp-admin.css",
+		"/Users/loic/Library/Application Support/Sublime Text 3/Packages/MacTerminal/MacTerminal.sublime-settings",
+		"/Users/loic/Library/Application Support/Sublime Text 3/Packages/User/MacTerminal.sublime-settings",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/tinymce-graphical-shortcode/tinymce-graphical-shortcode.php",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/tinymce-graphical-shortcode/tinymce-plugin/icitspots/editor_plugin.js",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/inc/views/ajax-dialog-edit-xref.php",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/themefiles/carnet-du-frac/single-publication.php",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/public/mp.functions.php",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/inc/tinymce_js/mp_tinymce_buttons.js",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/css/editor-style.css",
+		"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher/inc/mp-settings.php",
+		"/Users/loic/Sites/Site_CDF/carnet-du-frac.sublime-project",
+		"/Users/loic/Sites/Site_CDF/wp-config-sample.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/loic/Sites/Site_CDF/wp-content/plugins/multi-publisher"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"commandArray",
+			"'",
+			"$this->gallery",
+			"epub",
+			"1831",
+			"1559",
+			"756",
+			"wp_ajax_find_posts",
+			"TEMPLATEPATH",
+			"TEMPLA",
+			"TEMPLATEPATH",
+			"set",
+			"setAttribute",
+			"vendor",
+			"mp_new_option_name",
+			"settings_fields",
+			"do_settings_sections",
+			"mp_option_etc",
+			"option.php",
+			"Nom de ",
+			"\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b",
+			"get_gallery_json",
+			"MOHTADJI Arman",
+			"mp_gallery_image",
+			"gallerie_data",
+			"my+life",
+			"mp_get_publication_json_struture",
+			"structure",
+			"wpb_list_child_pages",
+			"parent",
+			"get_gallery_json",
+			"TEMPLATEPATH",
+			"loadLibraries",
+			"galleries_get_json_callback",
+			"xref",
+			"mp_gallery",
+			"ajaxurl",
+			"ajax",
+			"TEMPLATEPATH",
+			"shortcode",
+			"mp_galle",
+			"console.log(",
+			"croisée",
+			"epub",
+			"ttf",
+			"structure_to_html",
+			"render_meta_box_edition_content",
+			"structure_to_html",
+			"dialog_add_partie",
+			"dialog_add_partie_callback",
+			"dialog_partie_callback",
+			"mp_galler",
+			"tiny",
+			"shortcode",
+			"my_add_tinymce_button",
+			"my_tinymce_button",
+			"mce_external_plugins",
+			".js",
+			"xref",
+			"dialog",
+			"xref",
+			".mp_gallery_image",
+			"mp-admin.js",
+			"xref",
+			"mp_gallery_dialog",
+			"mp_gallery_image",
+			"ID",
+			"generate_publication_callback",
+			"ajax",
+			"getInfo",
+			"mp_template_redirection",
+			"note"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/loic/Documents/COURS/STRASBOURG/2015-2016/A5/Cohen Laure",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "projet-BeetsAndBeer.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 296.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
