@@ -1,38 +1,28 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-        
 <head>
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FESTIVAL BEAT AND BEER</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla:700' rel='stylesheet' type='text/css'> -->
     <link type="text/css" rel="stylesheet" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
-    </script>
-    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Karla:700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
-    </script>
-    
     <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
-    
-	<script type="text/javascript" src="js/jquery.scrollTo-master/jquery.scrollTo.js"></script>
-    
-    
-    
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/jquery.history.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
-    
+
 <!--BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY -->
 
 <body>
-    
+
     <div id="player">
-        
         <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
             <source type="audio/mp3" src="mp3_artistes/AchillesFamilyAchillesFamily.mp3">
-            Sorry, your browser does not support HTML5 audio.
+                Sorry, your browser does not support HTML5 audio.
         </audio>
-        
+
         <div id="tracklist">
             <div class="active"><a href="mp3_artistes/AchillesFamilyAchillesFamily.mp3">► Achille's Family</a></div>
             <div class="tracks"><a href="mp3_artistes/LaMoucheLesScouts.mp3">► Les Scouts</a></div>
@@ -41,130 +31,66 @@
             <div class="tracks"><a href="mp3_artistes/BlackShipCoOutsideofHistory.mp3">► Outside of history</a></div>
             <div class="tracks"><a href="mp3_artistes/ISHKEROShinpai%20Shinaide.mp3">► Shinpai Shinaide</a></div>
         </div>
-        
     </div>
-    
-    <a id="play_accueil" onclick="info_artiste('#player')" href="javascript://">►</a><br>
-    
-    
+
+    <a id="play_accueil" href="#">►</a>
+
+
     <!--vidéo en boucle-->
     <video autoplay loop poster="images/IMG_6060.JPG" id="bgvid">
-                    <source src="videos/MVI_6072j.webm" volume="0" type="video/webm">
-                    <source src="videos/MVI_6072j.mp4" volume="0" type="video/mp4">
-                </video>
-    
-    <script>      
-                    var vid = document.getElementById("bgvid");
-                    vid.volume = 0;
-                </script> 
-        
- 
-            
-            <!-- MENU -->
-                
-            <ul id="menu">
-                    <li><a id="lien_programme" href="javascript://">programme</a></li>
-                    <li><a id="lien_infospratiques" href="javascript://">infos pratiques</a></li>
-                    <li><a id="lien_leprojet" href="javascript://">le projet</a></li>
-                    <li><a id="lien_partenaires" href="javascript://">partenaires</a></li>
-                    <li><a id="lien_contact" href="javascript://">contact</a></li>
-                    <li><a href="https://www.facebook.com/beatandbeer/" target="_blank">facebook</a></li>
-        
-                </ul>
-            
-            <a id="fermer_artiste" href="index.html">←</a><br>         
-           
-            <!-- PAGE D'ACCUEIL -->
-    
-                <div class="titre">MIAM</div>
-                <div id="fiche_artiste">  
+        <source src="videos/MVI_6072j.webm" volume="0" type="video/webm">
+        <source src="videos/MVI_6072j.mp4" volume="0" type="video/mp4">
+    </video>
 
-                    <div class="texte_artistes">
-                    MiAM c'est deux âmes gourmandes qui croquent la vie à pleine Voix.
 
-Ces deux musiciennes se sont trouvées un beau jour d'été sur le parking d'un supermarché du sud de la France, pour ne plus se quitter.
+    <div id="ajax">
 
-Ensemble, elles cuisinent une musique à la poésie aigre douce et dissèquent les sentiments du monde.
 
-Prenez un bol de chanson française , ajoutez-y une pincé de folk, saupoudrez de quelques échappées latines et marocaines , chauffez le tout dans une grande casserole d'authenticité, tournez, mixez, renversez, puis dégustez chaud ou glacé …
+        <!-- MENU -->
+        <ul id="menu">
+            <li><a id="lien_programme" href="#">programme</a></li>
+            <li><a id="lien_infospratiques" href="#">infos pratiques</a></li>
+            <li><a id="lien_leprojet" href="#">le projet</a></li>
+            <li><a id="lien_partenaires" href="#">partenaires</a></li>
+            <li><a id="lien_contact" href="#">contact</a></li>
+            <li><a href="https://www.facebook.com/beatandbeer/" target="_blank">facebook</a></li>
+        </ul>
 
-Jeune crû de l'année 2013 , elles arpentent les rues de Paris et d'ailleurs , croisant la route de nombreux musiciens, façonnant ainsi leur propre teinte, au rythme des rencontres et de la vie.<br>
-    
-                    </div>
-                       
-                        <div class="data_artiste"><img src="images_artistes/Miam.jpg" class="image_artiste"><br>
-                            <div class="ecoute">► ecouter miam</div>
-                            <table class="liens_artiste">
-                            <tr>
-                                <td><a href="https://www.facebook.com/AchillesFamily/?fref=ts" target="_blank">facebook</a></td>
+        <a id="fermer_artiste" href="index.html">←</a><br>
+
+        <!-- PAGE D'ACCUEIL -->
+
+        <div class="titre">MIAM</div>
+        <div id="fiche_artiste">
+
+            <div class="texte_artistes">
+                MiAM c'est deux âmes gourmandes qui croquent la vie à pleine Voix.
+
+                Ces deux musiciennes se sont trouvées un beau jour d'été sur le parking d'un supermarché du sud de la France, pour ne plus se quitter.
+
+                Ensemble, elles cuisinent une musique à la poésie aigre douce et dissèquent les sentiments du monde.
+
+                Prenez un bol de chanson française , ajoutez-y une pincé de folk, saupoudrez de quelques échappées latines et marocaines , chauffez le tout dans une grande casserole d'authenticité, tournez, mixez, renversez, puis dégustez chaud ou glacé …
+
+                Jeune crû de l'année 2013 , elles arpentent les rues de Paris et d'ailleurs , croisant la route de nombreux musiciens, façonnant ainsi leur propre teinte, au rythme des rencontres et de la vie.
+            </div>
+
+            <div class="data_artiste">
+                <img src="images_artistes/Miam.jpg" class="image_artiste">
+                <div class="ecoute">► ecouter miam</div>
+                    <table class="liens_artiste">
+                        <tr>
+                            <td><a href="https://www.facebook.com/AchillesFamily/?fref=ts" target="_blank">facebook</a></td>
                             <td><a href="https://soundcloud.com/achillesfamily" target="_blank">soundcloud</a></td>
                             <td><a href="http://achillesfamily.wix.com/achilles-family" target="_blank">site web</a></td>
-                                </tr>
-                                </table>
-                            </div>
-                        </div>
-       
-        
-    
-    <!--</div>-->
-            
-    
-    <!-- SCRIPT DES BOUTONS --> 
-   <script>
-       
-       $( "#menu_accueil" ).click(function() { $( "#menu" ).slideToggle( 500 ); });
-       
-       $( "#play_accueil" ).click(function() { $( "#player" ).slideToggle( 500 ); });
-                        
-        </script>
-    
-    <script type="text/javascript">
-    
-       
-/* tracklist! tracklist! tracklist! tracklist! tracklist! tracklist! */
-       
-       var audio;
-var tracklist;
-var tracks;
-var current;
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-init();
-function init(){
-    current = 0;
-    audio = $('audio');
-    tracklist = $('#tracklist');
-    tracks = tracklist.find('li a');
-    len = tracks.length - 1;
-    audio[0].volume = .10;
-    audio[0].play();
-    tracklist.find('a').click(function(e){
-        e.preventDefault();
-        link = $(this);
-        current = link.parent().index();
-        run(link, audio[0]);
-    });
-    audio[0].addEventListener('ended',function(e){
-        current++;
-        if(current == len){
-            current = 0;
-            link = tracklist.find('a')[0];
-        }else{
-            link = tracklist.find('a')[current];    
-        }
-        run($(link),audio[0]);
-    });
-}
-function run(link, player){
-        player.src = link.attr('href');
-        par = link.parent();
-        par.addClass('active').siblings().removeClass('active');
-        audio[0].load();
-        audio[0].play();
-}
-       
-       /////////////////////////
+    </div>
 
-</script>
-                
+
 </body>
 </html>
