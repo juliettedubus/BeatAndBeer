@@ -83,6 +83,13 @@
 	},
 	"buffers":
 	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -167,8 +174,13 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/loic/Sites/HEAR-2016-BeatAndBeer"
+	],
 	"file_history":
 	[
+		"/Users/loic/Sites/HEAR-2016-BeatAndBeer/projet-BeatAndBeer.sublime-project",
 		"/Users/loic/Documents/COURS/STRASBOURG/2015-2016/A3/Projets/RIchard Laura/images.sh",
 		"/Users/loic/Documents/COURS/STRASBOURG/2015-2016/A3/Projets/RIchard Laura/script_images.sh",
 		"/Users/loic/Documents/COURS/STRASBOURG/2015-2016/A3/Projets/Yoo Jeonghee/exports/lelivre.xml",
@@ -265,7 +277,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"$INF/",
 			"images-2/",
 			"images/",
 			"livre_dvd",
@@ -411,8 +422,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/loic/Documents/COURS/STRASBOURG/2015-2016/A3/db.print/php",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -452,7 +492,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "projet-BeetsAndBeer.sublime-project",
+	"project": "projet-BeatAndBeer.sublime-project",
 	"replace":
 	{
 		"height": 46.0
@@ -493,7 +533,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 296.0,
+	"side_bar_width": 362.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

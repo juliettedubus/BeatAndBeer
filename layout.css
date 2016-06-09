@@ -1,0 +1,293 @@
+/** RESET **/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** LAYOUT **/
+
+@font-face {
+	font-family:'BEATANDBEER';
+	src: url('fonts/BEATANDBEER.eot');
+	src: url('fonts/BEATANDBEER.eot?#iefix') format('embedded-opentype'),
+	url('fonts/BEATANDBEER.woff') format('woff'),
+	url('fonts/BEATANDBEER.ttf') format('truetype'),
+	url('fonts/BEATANDBEER.svg#BEATANDBEER-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-20AC;
+}
+
+html,body{
+	width:100%;
+	height: 100%;
+	font-family: 'BEATANDBEER', sans;
+}
+
+
+#bandeau{
+	background: #F00;
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	font-size:40px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#bandeau span{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	vertical-align:center;
+	text-align: center;
+	font-size:80px;
+}
+
+#bandeau #menu{
+	position: absolute;
+	top:100px;
+	left: 20px;
+}
+
+#bandeau #infos{
+	height: 100%;
+	margin-left: 100px;
+	margin-right: 80px;
+	display: flex;
+	justify-content:space-between;
+	align-content: stretch;
+}
+
+#bandeau #infos p{
+	background: #FF0;
+	display: block:
+	vertical-align:center;
+	line-height: 80px;
+}
+
+#play{
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	font-size: 40px;
+}
+
+#content{
+	padding-top: 80px;
+	background: #0F0;
+	min-height: 100%;
+}
+
+/** ACCUEIL **/
+
+#accueil{
+	font-size: 140px;
+	max-width:800px;
+	margin: auto;
+	margin-top:40px;
+}
+
+#accueil sup{
+	font-size: 70px;
+	position: relative;
+	bottom: 70px;
+}
+
+
+/** ARTISTE **/ 
+
+.artiste{
+	max-width:1000px;
+	margin: auto;
+}
+
+.artiste h1{
+	font-size: 120px;
+	margin-left: 40px;
+}
+
+.artiste .boites{
+	display: flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+
+.artiste .boite{
+	width: calc(50% - 20px);
+	box-sizing: border-box;
+}
+
+.artiste .liens{
+	display: flex;
+	justify-content:space-between;
+	font-size: 40px;
+	padding-left: 40px;
+	order: 1;
+}
+
+.artiste .presentation{
+	margin-top: 20px;
+	order: 3;
+
+}
+.artiste .presentation p{
+	font-size: 20px;
+}
+
+.artiste .ecouter{
+	order: 2;
+	font-size: 40px;
+}
+
+.artiste .image{
+	order: 4;
+}
+
+.artiste .image img{
+	max-width: 100%;
+	height: auto;
+}
+
+/** TEXTE **/ 
+
+.texte{
+	max-width:1000px;
+	margin: auto;
+	font-size: 30px;
+}
+
+.texte h2,
+.texte p{
+	width: 50%;
+}
+
+.texte h2{
+	font-size: 60px;
+}
+
+.texte img{
+	max-width: 100%;
+	height: auto;
+	float: right;
+	margin-right: -100%;
+}
+
+@media screen and (max-width: 1000px) {
+	#bandeau{
+		font-size:30px;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	#bandeau{
+		font-size:20px;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+
+	#bandeau #infos{
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+
+	#bandeau #infos p{
+		background: #FF0;
+		display: block:
+		vertical-align:center;
+		line-height: 40px;
+		text-align: center;
+		margin: 0 10px;
+	}
+
+	.artiste .boite{
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.artiste .liens{
+		order: 2;
+	}
+
+	.artiste .presentation{
+		order: 3;
+	}
+
+	.artiste .ecouter{
+		order: 4;
+	}
+
+	.artiste .image{
+		order: 1;
+	}
+
+
+	.texte h2,
+	.texte p{
+		width: 100%;
+	}
+
+	.texte h2{
+		font-size: 60px;
+	}
+
+	.texte img{
+		float: none;
+		margin-right: 0;
+	}
+
+}
+
