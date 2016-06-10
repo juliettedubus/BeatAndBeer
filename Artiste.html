@@ -11,16 +11,16 @@
 <body>
 	<div id="bandeau">
 
-		<span id="btn_menu">+</span>
+		<span id="btn_menu"><a href="Accueil.html"><</a></span>
 
-		<ul id="menu">
+		<!--<ul id="menu">
 			<li>Programme</li>
 			<li>Infos pratiques</li>
 			<li>Le projet</li>
 			<li>Partenaires</li>
 			<li>Contacts</li>
 			<li>Actualites</li>
-		</ul>
+		</ul>-->
 
 		<div id="infos">
 			<p>Festival Beat and Beer</p>
@@ -31,15 +31,6 @@
 
 	</div>
 	<div id="content">
-
-		<!-- <ul id="accueil">
-			<li>Achille's Family<sup>18h00</sup></li>
-			<li>la mouche</li>
-			<li>Black Ship Co <sup>17h40</sup></li>
-		</ul> -->
-
-
-
 
 		 <div class="artiste">
 
@@ -94,29 +85,6 @@
 
 
 
-	<script src="js/jquery-1.12.3.min.js"></script>
-	<script>
-
-		$(document).ready(function(){
-
-			$("#menu").hide();
-
-			$("#btn_menu").click(function(e){
-
-				if( $(this).text() == "+"){
-					$(this).text('-');
-
-					$("#menu").slideDown();
-				}else{
-					$(this).text('+');
-
-					$("#menu").slideUp();
-				}
-
-			})
-
-		})
-
-	</script>
+	
 </body>
 </html>

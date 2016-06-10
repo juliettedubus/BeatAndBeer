@@ -72,8 +72,9 @@ html,body{
 
 
 #bandeau{
-	background: #FFF;
 	position: fixed;
+    margin-top: 0;
+    margin-left: 0;
 	height: 80px;
 	width: 100%;
 	font-size:40px;
@@ -92,13 +93,50 @@ html,body{
 	line-height: 80px;
 	vertical-align:center;
 	text-align: center;
-	font-size:80px;
+	font-size:40px;
 }
 
 #bandeau #menu{
 	position: absolute;
 	top:100px;
 	left: 20px;
+}
+
+#bandeau #menu_informations{
+	position: absolute;
+	top:100px;
+	left: 20px;
+}
+
+#menu_informations a:active{
+    color:blue;
+}
+
+#btn_menu{
+    font-family: 'Karla';
+}
+
+#btn_menu a{
+    color:black;
+    text-decoration: none;
+}
+
+#btn_menu:hover{
+    cursor: pointer;
+    color: orangered;
+}
+
+#btn_menu:active{
+    color: blue;
+}
+
+#btn_menu a:hover{
+    cursor: pointer;
+    color: orangered;
+}
+
+#btn_menu a:active{
+    color: blue;
 }
 
 #bandeau #infos{
@@ -110,8 +148,11 @@ html,body{
 	align-content: stretch;
 }
 
+#bandeau #infos:hover{
+    cursor: default;
+}
+
 #bandeau #infos p{
-	background: grey;
 	display: block;
 	vertical-align:center;
 	line-height: 80px;
@@ -124,10 +165,21 @@ html,body{
 	font-size: 40px;
 }
 
+#play:hover{
+    cursor: pointer;
+    color: orangered;
+}
+
+#play:active{
+    color: blue;
+}
+
 #content{
-	padding-top: 80px;
-	background: bisque;
-	min-height: 100%;
+	margin-top: 80px;
+    position: fixed;
+    overflow-y: scroll;
+    max-height: calc(100% - 80px);
+    width: 100%;
 }
 
 /** ACCUEIL **/
@@ -137,7 +189,7 @@ html,body{
     line-height: 160px;
 	max-width:900px;
 	margin-left: 0;
-	margin-top:40px;
+	padding-top:40px;
     padding-left:220px;
 }
 
@@ -156,6 +208,10 @@ li a{
 
 a:hover{
     color: orangered;
+}
+
+a:active{
+    color: blue;
 }
 
 
@@ -235,8 +291,8 @@ a:hover{
 	max-width:900px;
 	margin: auto;
 	font-size: 30px;
-	margin-top:20px;
     padding-left:200px;
+    padding-bottom: 400px;
 }
 
 .texte h2,
@@ -253,6 +309,21 @@ a:hover{
 .texte h2{
 	font-size: 60px;
     display:none;
+}
+
+.texte h1{
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.texte span{
+    font-family: 'Karla';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#infospratiques, #leprojet, #partenaires, #contact, #actualites, #programme{
+    padding-top: 20px;
 }
 
 .texte img{
@@ -339,6 +410,17 @@ a:hover{
     #play{
         display:none;
     }
+    
+    #bandeau #menu{
+        background: white;
+        font-size: 40px;
+        top:120px;
+        left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+    }
 
 }
 
@@ -354,13 +436,16 @@ a:hover{
 	}
 
 	#bandeau #infos p{
-		background: #FF0;
 		display: block:
 		vertical-align:center;
 		line-height: 40px;
 		text-align: center;
 		margin: 0 10px;
 	}
+    
+    #bandeau #menu_informations{
+        display:none;
+    }
 
 	.artiste .boite{
 		width: 100%;
