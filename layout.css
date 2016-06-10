@@ -72,7 +72,7 @@ html,body{
 
 
 #bandeau{
-	background: #F00;
+	background: #FFF;
 	position: fixed;
 	height: 80px;
 	width: 100%;
@@ -82,6 +82,7 @@ html,body{
 	-moz-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+    z-index: 1000;
 }
 
 #bandeau span{
@@ -110,8 +111,8 @@ html,body{
 }
 
 #bandeau #infos p{
-	background: #FF0;
-	display: block:
+	background: grey;
+	display: block;
 	vertical-align:center;
 	line-height: 80px;
 }
@@ -125,36 +126,51 @@ html,body{
 
 #content{
 	padding-top: 80px;
-	background: #0F0;
+	background: bisque;
 	min-height: 100%;
 }
 
 /** ACCUEIL **/
 
 #accueil{
-	font-size: 140px;
-	max-width:800px;
-	margin: auto;
+	font-size: 160px;
+    line-height: 160px;
+	max-width:900px;
+	margin-left: 0;
 	margin-top:40px;
+    padding-left:220px;
 }
 
 #accueil sup{
 	font-size: 70px;
 	position: relative;
-	bottom: 70px;
+	bottom: 60px;
+    padding-left: 20px;
+}
+
+li a{
+    outline:none;
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color: orangered;
 }
 
 
 /** ARTISTE **/ 
 
 .artiste{
-	max-width:1000px;
+	max-width:900px;
 	margin: auto;
 }
 
 .artiste h1{
 	font-size: 120px;
 	margin-left: 40px;
+    line-height:100px;
+    margin-top:40px;
 }
 
 .artiste .boites{
@@ -172,13 +188,25 @@ html,body{
 	display: flex;
 	justify-content:space-between;
 	font-size: 40px;
-	padding-left: 40px;
+	padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 10px;
 	order: 1;
 }
 
+.boites ul{
+		flex-wrap:wrap;
+    align-content: stretch;
+}
+
+.boites li{
+    padding-right: 5px;
+}
+
 .artiste .presentation{
-	margin-top: 20px;
+	margin-top: 10px;
 	order: 3;
+    font-family: 'Karla', sans-serif;
 
 }
 .artiste .presentation p{
@@ -188,9 +216,11 @@ html,body{
 .artiste .ecouter{
 	order: 2;
 	font-size: 40px;
+    margin-top: 10px;
 }
 
 .artiste .image{
+    margin-top: 10px;
 	order: 4;
 }
 
@@ -202,9 +232,11 @@ html,body{
 /** TEXTE **/ 
 
 .texte{
-	max-width:1000px;
+	max-width:900px;
 	margin: auto;
 	font-size: 30px;
+	margin-top:20px;
+    padding-left:200px;
 }
 
 .texte h2,
@@ -212,8 +244,15 @@ html,body{
 	width: 50%;
 }
 
+.texte p{
+    font-family: 'Karla';
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
 .texte h2{
 	font-size: 60px;
+    display:none;
 }
 
 .texte img{
@@ -221,27 +260,97 @@ html,body{
 	height: auto;
 	float: right;
 	margin-right: -100%;
+    padding-left:20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 	#bandeau{
 		font-size:30px;
 	}
+    
+    #content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #accueil{
+        font-size: 120px;
+        line-height: 120px;
+        padding-left: 0;
+        max-width: 700px;
+        padding-left: 160px;
+    }
+    
+    #accueil sup{
+        font-size: 60px;
+        bottom: 40px;
+        padding-left: 5px;
+    }
+    
+    .texte{
+        padding-left:150px;
+    }
 }
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 	#bandeau{
 		font-size:20px;
 	}
+    
+    #accueil{
+        font-size: 100px;
+        line-height: 100px;
+        max-width: 600px;
+        padding-left:120px;
+    }
+    
+    #accueil sup{
+        font-size: 50px;
+        bottom: 35px;
+    }
+    
+    .texte{
+        padding-left:110px;
+    }
+
+}
+   
+
+@media screen and (max-width: 750px) {
+    .artiste .liens{
+        display: block;
+        padding-left:40px;
+    }
 }
 
+@media screen and (max-width: 680px) {
+    #accueil{
+        font-size: 90px;
+        line-height: 90px;
+        padding-left: 0;
+    }
+    
+    #accueil sup{
+        font-size: 45px;
+        bottom: 30px;
+        padding-left: 5px;
+    }
+    
+    #play{
+        display:none;
+    }
+
+}
 
 @media screen and (max-width: 600px) {
 
 	#bandeau #infos{
 		flex-wrap:wrap;
 		justify-content:center;
+	}
+    
+    #bandeau{
+        height:auto;
 	}
 
 	#bandeau #infos p{
@@ -257,21 +366,43 @@ html,body{
 		width: 100%;
 		box-sizing: border-box;
 	}
+    
+    #accueil{
+        padding-left: 0;
+    }
+    
+    .texte{
+        padding-left:0;
+    }
+    
+    .texte img{
+        padding-left:0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .artiste h1{
+        text-align:center;
+    }
 
 	.artiste .liens{
-		order: 2;
+		order: 1;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
 	}
 
 	.artiste .presentation{
-		order: 3;
-	}
-
-	.artiste .ecouter{
 		order: 4;
 	}
 
+	.artiste .ecouter{
+		order: 3;
+        text-align: center;
+	}
+
 	.artiste .image{
-		order: 1;
+		order: 2;
 	}
 
 
@@ -282,6 +413,7 @@ html,body{
 
 	.texte h2{
 		font-size: 60px;
+        display:block;
 	}
 
 	.texte img{
@@ -289,5 +421,12 @@ html,body{
 		margin-right: 0;
 	}
 
+}
+
+@media screen and (max-width: 500px) {
+    #bandeau #infos{
+        margin-left: 70px;
+        margin-right: 20px;
+    }
 }
 
